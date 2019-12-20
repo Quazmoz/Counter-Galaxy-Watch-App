@@ -1,0 +1,110 @@
+* {
+    font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px auto;
+    background-color:lightblue;
+}
+
+.tri1{
+	height:0;
+	width:0;
+	position: absolute;
+	border-left: 180px solid transparent;
+    border-right: 180px solid transparent;
+    border-top: 180px solid yellow;
+  	top: 0%;
+  	left: 0%;
+	display:block;
+}
+
+.tri2{
+	height:0;
+	width:0;
+	position: absolute;
+  	top: 0%;
+  	left: 50%;
+	display:block;
+	border-top: 180px solid transparent;
+    border-right: 180px solid green;
+    border-bottom: 180px solid transparent;
+}
+
+.tri3{
+	position: absolute;
+  	top: 50%;
+  	left: 0%;
+	display:block;
+	width: 0;
+    height: 0;
+    border-left: 180px solid transparent;
+    border-right: 180px solid transparent;
+    border-bottom: 180px solid red;
+}
+
+.tri4{
+	display:block;
+	position: absolute;
+	top: 0%;
+  	left: 0%;
+	width: 0;
+    height: 0;
+    border-top: 180px solid transparent;
+    border-left: 180px solid blue;
+    border-bottom: 180px solid transparent;
+}
+
+#value1{
+	position: absolute;
+	font-size: 65px;
+	top: 0%;
+  	left: 45%;
+	z-index:5;
+}
+
+#value2{
+	position: absolute;
+	font-size: 65px;
+	top: 40%;
+  	left: 90%;
+	z-index:5;
+}
+
+#value3{
+	position: absolute;
+	font-size: 65px;
+	top: 82%;
+  	left: 45%;
+	z-index:5;
+}
+
+#value4{
+	position: absolute;
+	font-size: 65px;
+	top: 40%;
+  	left: 0%;
+	z-index:5;
+}
+
+#reset1{
+	background: url('../images/reset.png') no-repeat;
+	height:40%;
+	width: 20%;
+  	overflow: visible; 	
+	position: absolute;
+	top: 30%;
+  	left: 25%;
+	z-index:10;
+}
+
+#minus1{
+	background: url('../images/minus.png') no-repeat;
+	height:40%;
+	width: 20%;
+  	overflow: auto; 	
+	position: absolute;
+	top: 5%;
+  	left: 23%;
+	z-index:10;
+}
