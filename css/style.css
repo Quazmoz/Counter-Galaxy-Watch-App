@@ -13,7 +13,7 @@ body {
 	position: absolute;
 	border-left: 180px solid transparent;
     border-right: 180px solid transparent;
-    border-top: 180px solid yellow;
+    border-top: 180px solid darkorchid;
   	top: 0%;
   	left: 0%;
 	display:block;
@@ -27,7 +27,7 @@ body {
   	left: 50%;
 	display:block;
 	border-top: 180px solid transparent;
-    border-right: 180px solid green;
+    border-right: 180px solid lightgreen;
     border-bottom: 180px solid transparent;
 }
 
@@ -40,7 +40,7 @@ body {
     height: 0;
     border-left: 180px solid transparent;
     border-right: 180px solid transparent;
-    border-bottom: 180px solid red;
+    border-bottom: 180px solid coral;
 }
 
 .tri4{
@@ -51,7 +51,7 @@ body {
 	width: 0;
     height: 0;
     border-top: 180px solid transparent;
-    border-left: 180px solid blue;
+    border-left: 180px solid aqua;
     border-bottom: 180px solid transparent;
 }
 
@@ -89,22 +89,88 @@ body {
 
 #reset1{
 	background: url('../images/reset.png') no-repeat;
-	height:40%;
+	height:20%;
 	width: 20%;
   	overflow: visible; 	
 	position: absolute;
-	top: 30%;
-  	left: 25%;
+	top: 28%;
+  	left: 41%;
 	z-index:10;
 }
 
 #minus1{
 	background: url('../images/minus.png') no-repeat;
-	height:40%;
+	height:20%;
 	width: 20%;
   	overflow: auto; 	
 	position: absolute;
 	top: 5%;
   	left: 23%;
+	z-index:10;
+}
+
+#reset2{
+	background: url('../images/reset.png') no-repeat;
+	height:20%;
+	width: 20%;
+  	overflow: visible; 	
+	position: absolute;
+	top: 42%;
+  	left: 55%;
+	z-index:10;
+}
+
+#minus2{
+	background: url('../images/minus.png') no-repeat;
+	height:20%;
+	width: 20%;
+  	overflow: auto; 	
+	position: absolute;
+	top: 24%;
+  	left: 76%;
+	z-index:10;
+}
+
+#reset3{
+	background: url('../images/reset.png') no-repeat;
+	height:20%;
+	width: 20%;
+  	overflow: visible; 	
+	position: absolute;
+	top: 56%;
+  	left: 41%;
+	z-index:10;
+}
+
+#minus3{
+	background: url('../images/minus.png') no-repeat;
+	height:20%;
+	width: 20%;
+  	overflow: auto; 	
+	position: absolute;
+	top: 75%;
+  	left: 23%;
+	z-index:10;
+}
+
+#reset4{
+	background: url('../images/reset.png') no-repeat;
+	height:20%;
+	width: 20%;
+  	overflow: visible; 	
+	position: absolute;
+	top: 42%;
+  	left: 27%;
+	z-index:10;
+}
+
+#minus4{
+	background: url('../images/minus.png') no-repeat;
+	height:20%;
+	width: 20%;
+  	overflow: auto; 	
+	position: absolute;
+	top: 24%;
+  	left: 6%;
 	z-index:10;
 }
