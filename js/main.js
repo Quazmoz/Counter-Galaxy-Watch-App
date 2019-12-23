@@ -8,19 +8,55 @@ window.onload = function() {
                     tizen.application.getCurrentApplication().exit();
                 } catch (ignore) {}
         });
-
-
-        var val1 = 0;
-        var val2 = 0;
-        var val3 = 0;
-        var val4 = 0;
-
+        
+        //localStorage.setItem('perm1', 5);
+        
+        //data persistence variables
+        var perm1 = localStorage.getItem('perm1');
+        var perm2 = localStorage.getItem('perm2');
+        var perm3 = localStorage.getItem('perm3');
+        var perm4 = localStorage.getItem('perm4');
+        
+        //data persistence, read vars
+        if (perm1 > 0){
+        	var val1 = perm1;
+        	var textboxperm1 = document.querySelector('#value1');
+        	textboxperm1.innerHTML = val1;
+        }else{
+        	var val1 = 0;
+        }
+        
+        if (perm2 > 0){
+        	var val2 = perm2;
+        	var textboxperm2 = document.querySelector('#value2');
+        	textboxperm2.innerHTML = val2;
+        }else{
+        	var val2 = 0;
+        }
+        
+        if (perm3 > 0){
+        	var val3 = perm3;
+        	var textboxperm3 = document.querySelector('#value3');
+        	textboxperm3.innerHTML = val3;
+        }else{
+        	var val3 = 0;
+        }
+        
+        if (perm4 > 0){
+        	var val4 = perm4;
+        	var textboxperm4 = document.querySelector('#value4');
+        	textboxperm4.innerHTML = val4;
+        }else{
+        	var val4 = 0;
+        }        
+        
         //count button 1
         var textbox1 = document.querySelector('#value1');
         textbox1.addEventListener("click", function() {
                     box1 = document.querySelector('#value1');
                     val1++;
                     box1.innerHTML = val1;
+                    localStorage.setItem('perm1', val1);
                     if (val1 > 9) {
                         box1.style.left = "40%";
                     }
@@ -31,6 +67,7 @@ window.onload = function() {
                     minus1.addEventListener("click", function() {
                         box1 = document.querySelector('#value1');
                         val1--;
+                        localStorage.setItem('perm1', val1);
                         box1.innerHTML = val1;
                         if (val1 > 9) {
                             box1.style.left = "40%";
@@ -43,6 +80,7 @@ window.onload = function() {
                     reset1.addEventListener("click", function() {
                         box1 = document.querySelector('#value1');
                         val1 = 0;
+                        localStorage.setItem('perm1', val1);
                         box1.innerHTML = val1;
                         if (val1 > 9) {
                             box1.style.left = "40%";
@@ -57,6 +95,7 @@ window.onload = function() {
                     textbox2.addEventListener("click", function() {
                         box2 = document.querySelector('#value2');
                         val2++;
+                        localStorage.setItem('perm2', val2);
                         box2.innerHTML = val2;
                         if (val2 > 9) {
                             box2.style.left = "80%";
@@ -69,6 +108,7 @@ window.onload = function() {
                     minus2.addEventListener("click", function() {
                         box2 = document.querySelector('#value2');
                         val2--;
+                        localStorage.setItem('perm2', val2);
                         box2.innerHTML = val2;
                         if (val2 > 9) {
                             box2.style.left = "80%";
@@ -82,6 +122,7 @@ window.onload = function() {
                     reset2.addEventListener("click", function() {
                         box2 = document.querySelector('#value2');
                         val2 = 0;
+                        localStorage.setItem('perm2', val2);
                         box2.innerHTML = val2;
                         if (val2 > 9) {
                             box2.style.left = "80%";
@@ -96,6 +137,7 @@ window.onload = function() {
                     textbox3.addEventListener("click", function() {
                         box3 = document.querySelector('#value3');
                         val3++;
+                        localStorage.setItem('perm3', val3);
                         box3.innerHTML = val3;
                         if (val3 > 9) {
                             box3.style.left = "40%";
@@ -108,6 +150,7 @@ window.onload = function() {
                     minus3.addEventListener("click", function() {
                         box3 = document.querySelector('#value3');
                         val3--;
+                        localStorage.setItem('perm3', val3);
                         box3.innerHTML = val3;
                         if (val3 > 9) {
                             box3.style.left = "40%";
@@ -121,6 +164,7 @@ window.onload = function() {
                     reset3.addEventListener("click", function() {
                         box3 = document.querySelector('#value3');
                         val3 = 0;
+                        localStorage.setItem('perm3', val3);
                         box3.innerHTML = val3;
                         if (val3 > 9) {
                             box3.style.left = "40%";
@@ -135,8 +179,8 @@ window.onload = function() {
                     textbox4.addEventListener("click", function() {
                         box4 = document.querySelector('#value4');
                         val4++;
+                        localStorage.setItem('perm4', val4);
                         box4.innerHTML = val4;
-
                     });
                     
                   //minus button 4
@@ -144,6 +188,7 @@ window.onload = function() {
                     minus4.addEventListener("click", function() {
                         box4 = document.querySelector('#value4');
                         val4--;
+                        localStorage.setItem('perm4', val4);
                         box4.innerHTML = val4;
                         
                     });
@@ -153,6 +198,7 @@ window.onload = function() {
                     reset4.addEventListener("click", function() {
                         box4 = document.querySelector('#value4');
                         val4 = 0;
+                        localStorage.setItem('perm4', val4);
                         box4.innerHTML = val4;
                     });
 
